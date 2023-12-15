@@ -1,5 +1,7 @@
 const byteSize = (str) => {
-  // write your code here
+  const textBlob = new Blob([str], {type:'text/plain'});
+	let s = textBlob.size;
+	return s;
 };
 
 // Do not change the code below
